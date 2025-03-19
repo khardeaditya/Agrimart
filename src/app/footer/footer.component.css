@@ -1,0 +1,43 @@
+footer {
+    background-color: #2c6e49; /* Dark green background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding */
+}
+
+.footer-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer-container div {
+    flex: 1; /* Equal width for each section */
+    margin: 0 10px; /* Small margin between sections */
+}
+
+.footer-container h1 {
+    font-size: 24px; /* Larger font size for the logo */
+}
+
+.footer-container h3 {
+    font-size: 18px; /* Subheadings */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+.footer-container ul {
+    list-style: none; /* No bullet points */
+    padding: 0; /* No padding */
+}
+
+.footer-container ul li {
+    margin: 5px 0; /* Margin between list items */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Margin at the top */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default margin */
+}

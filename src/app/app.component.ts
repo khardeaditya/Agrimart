@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { FooterComponent } from './footer/footer.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,CommonModule],
@@ -30,8 +30,17 @@ export class AppComponent {
     url:'https://img.freepik.com/free-photo/people-holding-board-about-healthy-nutrition-veggie_53876-122976.jpg?t=st=1725970840~exp=1725974440~hmac=2d6a297a245c9b26ca027a00a02402bf933ba207fd9d3c76d3bc2a6d7a82c3ae&w=826',
     heading:'100% Pesticide-Free',
     desc:'To maintain our pesticide-free promise, we use methods such as crop rotation, natural insect predators, and carefully selected companion plants that deter pests without the need for synthetic chemicals. We believe in working with nature, not against it.'
-  }
+  },{
 
+    url:'https://img.freepik.com/free-photo/delicious-healthy-gmo-free-fruit-hands_23-2148536519.jpg?t=st=1725964869~exp=1725968469~hmac=ff09073ef805bef9313b384d742e01045b8da40300da0e70632a82a38027243a&w=996',
+    heading:'Non-GMO Products',
+    desc:'Our products are 100% Non-GMO, meaning they have not been genetically altered in a lab. You’re getting food the way nature intended.We believe in keeping food as natural as possible, so none of our products contain genetically modified ingredients'
+  },
+  {
+    url:'https://img.freepik.com/free-photo/local-grown-vegetables-basket_23-2149128089.jpg?t=st=1726140394~exp=1726143994~hmac=dd40b9aabaea8eeded2e9d5ed4cb0a88b96acd3c9d68311100dd35e647f0890a&w=996',
+    heading:'Farm-Fresh to You',
+    desc:'To maintain our pesticide-free promise, we use methods such as crop rotation, natural insect predators, and carefully selected companion plants that deter pests without the need for synthetic chemicals. We believe in working with nature, not against it.'
+  }
 ];
 
 }
