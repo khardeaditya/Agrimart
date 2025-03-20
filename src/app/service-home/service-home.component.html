@@ -1,0 +1,15 @@
+<p>service-home works!</p>
+<section class="services">
+    <h2>Services</h2>
+    <div class="image-slider">
+        <div class="slides">
+          <div *ngFor="let imgs of silderimg"></div>
+            <div class="slide active">
+                <img [src]="imgs.url" alt="Image 1"></div>
+           
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+

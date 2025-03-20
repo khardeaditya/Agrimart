@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriMart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="welcome-section">
+            <h2 class="welcome">Welcome to AgriMart</h2>
+            <p>Bringing Fresh, Organic Food Straight to Your Table</p>
+            <img  src="https://img.freepik.com/free-photo/agricultural-field-ai-generated_268835-9203.jpg?t=st=1725963748~exp=1725967348~hmac=aab2a665f469f8ffaaf1c009bfa5f3f9d94ce894e9719623bc72bc4c94d95859&w=1060" alt="Fresh Plants">
+        </section>
+    </main>
+
+
+    <div class="container">
+        <div class="x" *ngFor="let card of cards">
+        <div class="card">
+            <img [src]="card.url" alt="Our Mission">
+            <h2>{{card.heading}}</h2>
+            <p>{{card.desc}}</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

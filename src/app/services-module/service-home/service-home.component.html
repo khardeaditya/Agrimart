@@ -1,0 +1,60 @@
+<section class="services">
+    <h2>Services</h2>
+    <div class="image-slider">
+        <div class="slides">
+          <div *ngFor="let imgs of silderimg">
+            <div class="slide active">
+                <img [src]="imgs.url" alt="Image 1"></div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+<div class="services-container">
+    <h1>Agrimart Services</h1>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="https://agrimart-eta.vercel.app/essentials" alt="Essentials">
+        <div class="overlay">Essentials</div>
+      </div>
+      <div class="service-item">
+        <img src="https://agrimart-eta.vercel.app/vegetables" alt="Vegetables">
+        <div class="overlay">Vegetables</div>
+      </div>
+      <div class="service-item">
+        <img src="https://agrimart-eta.vercel.app/exotics" alt="Exotics">
+        <div class="overlay">Exotics</div>
+      </div>
+      <div class="service-item">
+        <img src="https://agrimart-eta.vercel.app/fruits" alt="Fruits">
+        <div class="overlay">Fruits</div>
+      </div>
+      <div class="service-item">
+        <img src="https://agrimart-eta.vercel.app/dairy" alt="Dairy">
+        <div class="overlay">Dairy</div>
+      </div>
+    </div>
+  </div>
+
+  <img src={{image}} alt="">
+<script>
+    
+slideIndex = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[slideIndex].classList.add('active');
+}
+
+function changeSlide(n) {
+    const slides = document.querySelectorAll('.slide');
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlides();
+}
+
+showSlides();
+setInterval(() => changeSlide(1), 3000);  // Auto-slide every 3 seconds
+
+</script>
