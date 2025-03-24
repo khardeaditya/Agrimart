@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="left-panel">
+      <div class="welcome-text">
+        <h2>Welcome</h2>
+        <p>Harvest the Best Deals - Register and Start Shopping with</p>
+        <!-- <h1>AGRIMART</h1> -->
+        <img src="https://agrimart-eta.vercel.app/static/media/logo2.6723a4ac57d99af60b28.png" alt="">
+    </div>
+    </div>
+    <div class="right-panel">
+      <div class="form-container">
+        <h3>Registration Form</h3>
+        <form action="" (ngSubmit)="SaveRegi(regi)">
+          <input type="text" placeholder="First Name" name="fname" [(ngModel)]="regi.fname"  required />
+          <input type="text" placeholder="Last Name" name="lname" [(ngModel)]="regi.lname" required />
+          <input type="email" placeholder="Your Email" name="email" [(ngModel)]="regi.email" required />
+          <input type="tel" placeholder="Your Phone" name="number" [(ngModel)]="regi.number" required />
+          <input type="password" placeholder="Password" name="pass" [(ngModel)]="regi.pass" required />
+          <input type="password" placeholder="Password" name="cpass" [(ngModel)]="regi.cpass" required />
+          <button type="submit">Register</button>
+        </form>
+        <p>Do not have an account? <a href="#">Login here</a></p>
+      </div>
+    </div>

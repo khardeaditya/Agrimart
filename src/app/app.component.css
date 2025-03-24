@@ -2,6 +2,7 @@
 header {
     background-color: #1ABC9C;
     padding: 20px 0;
+
 }
 
 .navbar {
@@ -11,6 +12,7 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
+    
 }
 
 nav ul {
